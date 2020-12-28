@@ -154,6 +154,9 @@ export default {
             },
             close () {
               console.log('modal close 回调')
+            },
+            change() {
+              alert(2222)
             }
           }
         },

@@ -2,7 +2,7 @@
 import * as loginService from '@/api/login'
 // eslint-disable-next-line
 import { BasicLayout, BlankLayout, PageView, RouteView } from '@/layouts'
-
+ import {Analysis} from 'test1'
 // 前端路由表
 const constantRouterComponents = {
   // 基础页面 layout 必须引入
@@ -15,8 +15,10 @@ const constantRouterComponents = {
   '500': () => import(/* webpackChunkName: "error" */ '@/views/exception/500'),
 
   // 你需要动态引入的页面组件
-  'Workplace': () => import('@/views/dashboard/Workplace'),
+  'Workplace':() => import('@/views/dashboard/Analysis'),
   'Analysis': () => import('@/views/dashboard/Analysis'),
+  
+  
 
   // form
   'BasicForm': () => import('@/views/form/basicForm'),
