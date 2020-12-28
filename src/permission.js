@@ -14,6 +14,7 @@ const whiteList = ['login', 'register', 'registerResult'] // no redirect whiteli
 const loginRoutePath = '/user/login'
 const defaultRoutePath = '/dashboard/workplace'
 
+console.log('copy')
 router.beforeEach((to, from, next) => {
   console.log(123)
   NProgress.start() // start progress bar
